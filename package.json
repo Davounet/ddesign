@@ -6,8 +6,17 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "bundle": "vue-cli-service build --target lib --name ddesign ./src/components/bundle.js"
   },
+  "main": "./dist/ddesign.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
   "dependencies": {
     "vue": "^2.5.17"
   },
